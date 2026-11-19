@@ -332,7 +332,7 @@ function useFileUpload() {
 			notificationsStore.remove(dragNotificationID);
 		}
 
-		const files = Array.from(event.dataTransfer.files).filter((file) => file.type);
+		const files = Array.from(event.dataTransfer.files);
 
 		fileUploadNotificationID = notificationsStore.add({
 			title: t(

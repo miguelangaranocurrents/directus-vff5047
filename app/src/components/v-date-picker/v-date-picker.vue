@@ -154,6 +154,7 @@ function setToNow() {
 			v-slot="{ weekDays, grid, date }"
 			:model-value="calendarValue"
 			:disabled="disabled"
+			:locale="userStore.language"
 			class="calendar"
 			fixed-weeks
 			weekday-format="short"
